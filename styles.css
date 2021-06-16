@@ -62,7 +62,7 @@ body {
 
 .card {
   width: 40%;
-  max-width: 200px;
+  max-width: 40%;
   height: auto;
   background: #ffffff;
   border-radius: 20px;
@@ -70,11 +70,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .card-image img {
-  width: 100%;
-
+  width: auto;
+  max-height: 70px;
   padding: 10%;
 }
 
