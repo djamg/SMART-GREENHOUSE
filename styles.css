@@ -102,3 +102,9 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: white;
+}
