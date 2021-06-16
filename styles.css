@@ -108,3 +108,54 @@ a:visited {
   text-decoration: none;
   color: white;
 }
+
+/* NEW ONES */
+
+.card-control {
+  width: 80%;
+  max-width: 80%;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.card-image-control img {
+  width: auto;
+  max-height: 50px;
+  padding: 25%;
+}
+
+.card-time-control {
+  padding-bottom: 5px;
+  color: rgb(18, 18, 243);
+  font-weight: bold;
+}
+
+.card-row-display {
+  display: flex;
+  justify-content: center;
+}
+
+.card-display {
+  width: 40%;
+  max-width: 40%;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.card-crop-display {
+  font-size: large;
+  font-weight: bold;
+}
