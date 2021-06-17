@@ -115,21 +115,19 @@ a:visited {
 
 .container1-control {
   background-image: linear-gradient(to top left, #39b385, #9be15d);
-  height: 86vh;
-  width: 100%;
 }
 
 .card-control {
-  width: 80%;
-  max-width: 80%;
-  height: 60px;
+  width: 40%;
+
   background: #ffffff;
   border-radius: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: left;
+
   align-items: center;
   margin-bottom: 20px;
+  width: 80%;
 }
 
 .card-image-control img {
@@ -170,26 +168,23 @@ a:visited {
 
 /* The switch - the box around the slider */
 .switch {
-  position: relative;
-  display: inline-block;
+  position: fixed;
+  right: 12%;
+  margin-top: -25px;
   width: 60px;
   height: 44px;
 }
 
 .fan {
-  margin-left: 1025px;
 }
 
 .light {
-  margin-left: 1000px;
 }
 
 .water {
-  margin-left: 990px;
 }
 
 .uv {
-  margin-left: 1045px;
 }
 
 /* Hide default HTML checkbox */
