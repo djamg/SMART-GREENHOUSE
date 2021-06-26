@@ -25,22 +25,22 @@
         <div class="card-container">
                 <div class="card-row">
                     <div class="card-control">
-                        <input class="checkbox" id="lists[fan]" type="checkbox" name="lists[fan]" />
-                        <label for="lists[fan]" class="check card-image-new"><img src="./assets/fan.png" alt=""><div class="card-crop-display">FAN</div></label>
+                        <input class="checkbox" id="fan" type="checkbox" name="fan" onclick="calc('fan');"/>
+                        <label for="fan" class="check card-image-new" ><img src="./assets/fan.png" alt=""><div class="card-crop-display">FAN</div></label>
                     </div>
                     <div class="card-control">
-                        <input class="checkbox" id="lists[sun]" type="checkbox" name="lists[sun]" />
-                        <label for="lists[sun]" class="check card-image-new"><img src="./assets/sun.png" alt=""><div class="card-crop-display">LIGHT</div></label>
+                        <input class="checkbox" id="light" type="checkbox" name="light" onclick="calc('light');"/>
+                        <label for="light" class="check card-image-new"><img src="./assets/sun.png" alt=""><div class="card-crop-display">LIGHT</div></label>
                     </div>
                 </div>
                 <div class="card-row">
                     <div class="card-control">
-                        <input class="checkbox" id="lists[water]" type="checkbox" name="lists[water]" />
-                        <label for="lists[water]" class="check card-image-new"><img src="./assets/drop.png" alt=""><div class="card-crop-display">WATER</div></label>
+                        <input class="checkbox" id="water" type="checkbox" name="water" onclick="calc('water');"/>
+                        <label for="water" class="check card-image-new"><img src="./assets/drop.png" alt=""><div class="card-crop-display">WATER</div></label>
                     </div>
                     <div class="card-control">
-                        <input class="checkbox" id="lists[uv]" type="checkbox" name="lists[uv]" />
-                        <label for="lists[uv]" class="check card-image-new"><img src="./assets/uv-protection.png" alt=""><div class="card-crop-display">UV</div></label>
+                        <input class="checkbox" id="uv" type="checkbox" name="uv" onclick="calc('uv');" />
+                        <label for="uv" class="check card-image-new"><img src="./assets/uv-protection.png" alt=""><div class="card-crop-display">UV</div></label>
                     </div>
                 </div>
             </div>
@@ -65,6 +65,26 @@
                 </div>
             </div>
     </div>
+
+    <script>
+        const url = 'http://amg3d.duckdns.org:5000/write';
+
+        function calc(x)
+            {
+            if (document.getElementById(x).checked) 
+            {
+                console.log("yoyoyo" + x);
+                fetch(url+"?q="+x+"_on")
+                    .then(response => response)
+                    .then(data => console.log(data));
+            } else {
+                console.log("nononono" +x);
+                fetch(url+"?q="+x+"_off")
+                    .then(response => response)
+                    .then(data => console.log(data));
+            }
+            }
+    </script>
 </body>
 </html>
 

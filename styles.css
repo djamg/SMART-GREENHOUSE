@@ -2,7 +2,7 @@ html,
 body {
   /*background-color: rgb(255, 255, 255);*/
   background: linear-gradient(to top left, #39b385, #9be15d);
-  background-size: 400% 400%;
+  background-size: 100% 100rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin: 0;
