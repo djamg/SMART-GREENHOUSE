@@ -16,62 +16,35 @@
     <div class="title"><img src="./assets/logo.png" alt="logo">
         <span>SMART GREENHOUSE</span>
     </div>
-    <div class="container1-control">
+    <div class="container1">
         
         <div class="nav">
             <a href="/index.html" type="button" class="btn btn-primary btn-lg">CROP</button></a>
             <a href="/control.html" type="button" class="btn btn-primary btn-lg">CONTROL</button></a>    
         </div>
         <div class="card-container">
-            <div class="card-row">
-                <div class="card-control">
-                    <div class="card-image-control"><img src="./assets/fan.png" alt=""></div>
-                    <div class="card-crop-display">FAN</div>
-                    <div>
-                        <label class="switch  fan">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label>
+                <div class="card-row">
+                    <div class="card-control">
+                        <input class="checkbox" id="lists[fan]" type="checkbox" name="lists[fan]" />
+                        <label for="lists[fan]" class="check card-image-new"><img src="./assets/fan.png" alt=""><div class="card-crop-display">FAN</div></label>
+                    </div>
+                    <div class="card-control">
+                        <input class="checkbox" id="lists[sun]" type="checkbox" name="lists[sun]" />
+                        <label for="lists[sun]" class="check card-image-new"><img src="./assets/sun.png" alt=""><div class="card-crop-display">LIGHT</div></label>
+                    </div>
+                </div>
+                <div class="card-row">
+                    <div class="card-control">
+                        <input class="checkbox" id="lists[water]" type="checkbox" name="lists[water]" />
+                        <label for="lists[water]" class="check card-image-new"><img src="./assets/drop.png" alt=""><div class="card-crop-display">WATER</div></label>
+                    </div>
+                    <div class="card-control">
+                        <input class="checkbox" id="lists[uv]" type="checkbox" name="lists[uv]" />
+                        <label for="lists[uv]" class="check card-image-new"><img src="./assets/uv-protection.png" alt=""><div class="card-crop-display">UV</div></label>
                     </div>
                 </div>
             </div>
             <div class="card-row">
-                <div class="card-control">
-                    <div class="card-image-control"><img src="./assets/sun.png" alt=""></div>
-                    <div class="card-crop-display">LIGHT</div>
-                    <div>
-                        <label class="switch light">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <div class="card-row">
-                <div class="card-control">
-                    <div class="card-image-control"><img src="./assets/drop.png" alt=""></div>
-                    <div class="card-crop-display">WATER</div>
-                    <div>
-                        <label class="switch water">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <div class="card-row">
-                <div class="card-control">
-                    <div class="card-image-control"><img src="./assets/uv-protection.png" alt=""></div>
-                    <div class="card-crop-display">UV</div>
-                    <div>
-                        <label class="switch uv">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <div class="card-row-display">
                 <div class="card-display">
                     <div class="card-crop-display">HUM</div>
                     <div class="card-time-control">70%</div>
@@ -81,7 +54,7 @@
                     <div class="card-time-control">20 C</div>
                 </div>
             </div>
-            <div class="card-row-display">
+            <div class="card-row">
                 <div class="card-display">
                     <div class="card-crop-display">SMO</div>
                     <div class="card-time-control">30%</div>
@@ -94,3 +67,6 @@
     </div>
 </body>
 </html>
+
+
+
