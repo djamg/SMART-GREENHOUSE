@@ -1,6 +1,8 @@
 html,
 body {
-  background-color: rgb(255, 255, 255);
+  /*background-color: rgb(255, 255, 255);*/
+  background: linear-gradient(to top left, #39b385, #9be15d);
+  background-size: 400% 400%;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin: 0;
@@ -8,7 +10,8 @@ body {
 }
 
 .title {
-  margin-top: 10px;
+  background-color: rgb(255, 255, 255);
+  /*margin-top: 10px;*/
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -45,8 +48,7 @@ body {
 
 .container1 {
   /*background-color: #006d35;*/
-  background-image: linear-gradient(to top left, #39b385, #9be15d);
-  height: 86vh;
+  background: inherit;
   width: 100%;
 }
 
@@ -111,16 +113,16 @@ a:visited {
 }
 
 /* NEW ONES */
-
+/*
 .container1-control {
   background-image: linear-gradient(to top left, #39b385, #9be15d);
   height: 86vh;
   width: 100%;
 }
-
+*/
 .card-control {
-  width: 80%;
-  max-width: 80%;
+  width: 40%;
+  max-width: 40%;
   height: 60px;
   background: #ffffff;
   border-radius: 20px;
@@ -129,6 +131,7 @@ a:visited {
   justify-content: left;
   align-items: center;
   margin-bottom: 20px;
+  margin-right: 10px;
 }
 
 .card-image-control img {
@@ -142,12 +145,12 @@ a:visited {
   font-weight: bold;
   font-size: x-large;
 }
-
+/*
 .card-row-display {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
-
+*/
 .card-display {
   width: 40%;
   max-width: 40%;
@@ -167,82 +170,61 @@ a:visited {
   font-weight: bold;
 }
 
-/* The switch - the box around the slider */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 44px;
-}
-
-.fan {
-  margin-left: 1025px;
-}
-
-.light {
-  margin-left: 1000px;
-}
-
-.water {
-  margin-left: 990px;
-}
-
-.uv {
-  margin-left: 1045px;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 7.5px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 28px;
-  width: 26px;
-  top: 4px;
-  left: 4px;
-  bottom: 4px;
+/*---------------------------------------------------*/
+label {
+  width: 40%;
+  max-width: 40%;
+  display: block;
+  border: solid 1px white;
+  line-height: 40px;
+  height: 60px;
+  /* width: 250px;*/
+  border-radius: 20px;
+  -webkit-font-smoothing: antialiased;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  text-align: center;
   background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
 }
 
-input:checked + .slider {
-  background-color: #2196f3;
+input[type="checkbox"] {
+  display: none;
 }
 
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+input:checked + label {
+  border: solid 1px #007bff;
+  color: white;
+  background-color: #007bff;
 }
 
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+input:checked + label:before {
+  content: "";
 }
 
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
+/* new stuff */
+.check {
+  display: flex;
+  flex-direction: row;
+  visibility: visible;
+  width: 100%;
+  max-width: 100%;
+  height: 62px;
 }
 
-.slider.round:before {
-  border-radius: 50%;
+input:checked + label .check {
+  visibility: visible;
+}
+
+input.checkbox:checked + label:before {
+  content: "";
+}
+
+.card-image-new img {
+  width: auto;
+  max-height: 50px;
+  margin-right: 5px;
 }
